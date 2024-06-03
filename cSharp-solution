@@ -1,0 +1,20 @@
+public class Solution {
+    public void ReverseString(char[] s) {
+
+        //INITIALIZE 
+        int l_Pointer = 0;
+        int r_Pointer = s.Length -1;
+
+        while( l_Pointer < r_Pointer) {
+
+            char temp = s[l_Pointer];
+            s[l_Pointer] = s[r_Pointer];
+            s[r_Pointer] = temp;
+
+            l_Pointer++;
+            r_Pointer--;
+            
+        }
+        
+    }
+}
