@@ -1,0 +1,20 @@
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+
+      int l_Pointer = 0;
+
+      int r_Pointer = s.size() - 1;
+
+      while(l_Pointer < r_Pointer) {
+
+        char temp = s[l.Pointer];
+        s[l_Pointer] = s[r_Pointer];
+        s[r_Pointer] = temp;
+
+        l_Pointer ++;
+        r_Pointer --;
+      }
+        
+    }
+};
